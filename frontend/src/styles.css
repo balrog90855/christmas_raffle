@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+/* No web fonts: 'Fredoka' is an alias for locally installed system fonts, so component CSS keeps working offline. */
+@font-face {
+  font-family: 'Fredoka';
+  font-weight: 100 900;
+  src: local('Segoe UI'), local('Helvetica Neue'), local('Arial');
+}
 
 :root {
   --red: #d7263d;
@@ -19,7 +24,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family:   system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   color: var(--ink);
   background:
     radial-gradient(circle at 10% 0%, #ffe3e3 0, transparent 40%),
@@ -28,7 +33,7 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3 { font-family: 'Fredoka', 'Inter', sans-serif; margin: 0 0 0.5rem; }
+h1, h2, h3 { font-family: system-ui, 'Segoe UI', Arial, sans-serif; margin: 0 0 0.5rem; }
 .muted { color: var(--muted); }
 .small { font-size: 0.85rem; }
 

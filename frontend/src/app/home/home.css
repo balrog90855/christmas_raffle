@@ -1,14 +1,5 @@
 :host { display: block; position: relative; overflow-x: hidden; }
 
-.snow { position: fixed; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
-.snow span {
-  position: absolute; top: -2rem; color: #fff; font-size: 1.1rem;
-  text-shadow: 0 0 4px rgba(120, 150, 190, 0.7);
-  animation: fall linear infinite;
-}
-@keyframes fall { to { transform: translateY(110vh) rotate(360deg); } }
-@media (prefers-reduced-motion: reduce) { .snow { display: none; } }
-
 .hero {
   position: relative; z-index: 2;
   text-align: center; color: #fff;
